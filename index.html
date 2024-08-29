@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>Главная страница</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="inner_serch">
+            <label for="inner_serch"></label>
+            <input
+              type="search"
+              id="inner_serch"
+              class="search__bar"
+              placeholder="Поиск по сайту"
+            />
+
+            <button type="button" class="search__button">
+            <img src="/icon/search.svg" alt="search" class="search">
+            </button>
+
+            <div class="select-container">
+              <select name="select" class="search__select">
+                <option value="language1" selected>Ru</option>
+                <option value="language1">En</option>
+                <option value="language1">Fr</option>
+                <option value="language1">Gr</option>
+              </select>
+              <div class="select-arrow"></div>
+            </div>
+
+            <div>
+              <button type="button" class="login__button">Войти</button>
+            </div>
+        </div>
+        <div class="container">
+          <nav class="header__menu">
+            <h3 class="header__menu_name">Категории:</h3>
+            <ul class="header__menu_list">
+              <li class="header__menu_item">
+                <a href="/" class="header__menu_link is-current">
+                  <img
+                    src="./icon/physics.svg"
+                    alt="Физика"
+                    class="header__menu_icon"
+                  />
+                  Физика
+                </a>
+              </li>
+
+              <li class="header__menu_item">
+                <a href="/" class="header__menu_link">
+                  <img
+                    src="./icon/chemistry.svg"
+                    alt="Химия"
+                    class="header__menu_icon in-him"
+                  />
+                  Химия
+                </a>
+              </li>
+
+              <li class="header__menu_item">
+                <a href="/" class="header__menu_link">
+                  <img
+                    src="./icon/biology.svg"
+                    alt="Биология"
+                    class="header__menu_icon"
+                  />
+                  Биология
+                </a>
+              </li>
+
+              <li class="header__menu_item">
+                <a href="/" class="header__menu_link">
+                  <img
+                    src="./icon/economy.svg"
+                    alt="Экономика"
+                    class="header__menu_icon"
+                  />
+                  Экономика
+                </a>
+              </li>
+
+              <li class="header__menu_item">
+                <a href="/" class="header__menu_link">
+                  <img
+                    src="./icon/mathematics.svg"
+                    alt="Механика"
+                    class="header__menu_icon"
+                  />
+                  Механика
+                </a>
+              </li>
+
+              <li class="header__menu_item">
+                <a href="/" class="header__menu_link">
+                  <img
+                    src="./icon/engineering.svg"
+                    alt="Инженерия"
+                    class="header__menu_icon"
+                  />
+                  Инженерия
+                </a>
+              </li>
+
+              <li class="header__menu_item">
+                <a href="/" class="header__menu_link">
+                  <img
+                    src="./icon/scientific-catalog-equipment.svg"
+                    alt="Каталог научного оборудования"
+                    class="header__menu_icon"
+                  />
+                  Каталог научного оборудования
+                </a>
+              </li>
+
+              <li class="header__menu_item">
+                <a href="/" class="header__menu_link">
+                  <img
+                    src="./icon/equipment.svg"
+                    alt="Оборудование с УД"
+                    class="header__menu_icon"
+                  />
+                  Оборудование с УД
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="banner-container">
+            <div class="banner main-banner">
+              <img src="/img/Baner_hello.png" alt="Banner-hello" />
+            </div>
+            <div class="banner-row">
+              <div class="banner two-banner">
+                <img src="/img/baner_catalog_grean.png" alt="Catalog Green" />
+                <div class="banner-buttons">
+                  <a href="#" class="banner-button">Открыть</a>
+                </div>
+              </div>
+            </div>
+            <div class="banner tree-banner">
+              <img src="/img/baner_catalog_red.png" alt="Catalog Red" />
+              <div class="banner-buttons">
+                <a href="#" class="banner-button">Открыть</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__shop">
+        <div class="main__shop_cards">
+          <div class="shop__card">
+            <a href="#!" class="shop__card-link">
+              <img src="./icon/shop.svg" alt="Shop" class="shop__card_ico" />
+
+              <div class="shop__card_title">
+                <h2 class="card__title_name">Пример1</h2>
+                <p class="card__title_parag">Пример1</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="shop__card">
+            <a href="#!" class="shop__card-link">
+              <img src="./icon/shop.svg" alt="Shop" class="shop__card_ico" />
+
+              <div class="shop__card_title">
+                <h2 class="card__title_name">Пример2</h2>
+                <p class="card__title_parag">Пример2</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="shop__card">
+            <a href="#!" class="shop__card-link">
+              <img src="./icon/shop.svg" alt="Shop" class="shop__card_ico" />
+
+              <div class="shop__card_title">
+                <h2 class="card__title_name">Пример3</h2>
+                <p class="card__title_parag">Пример3</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="shop__card">
+            <a href="#!" class="shop__card-link">
+              <img src="./icon/shop.svg" alt="Shop" class="shop__card_ico" />
+
+              <div class="shop__card_title">
+                <h2 class="card__title_name">Пример4</h2>
+                <p class="card__title_parag">Пример4</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="main_items_case">
+          <h4 class="main_items_name">Физика</h4>
+          <div class="main__items">
+            <div class="shop_list">
+              <a href="#!" class="shop_link in-select">Оптика</a>
+              <a href="#!" class="shop_link">Оптика1</a>
+              <a href="#!" class="shop_link">Оптика2</a>
+              <a href="#!" class="shop_link">Оптика3</a>
+              <a href="#!" class="shop_link">Оптика4</a>
+            </div>
+
+            <div class="main_items_inner">
+              <div class="inner_card">
+                <img src="./img/binoculars.png" alt="Binokle" />
+                <h4 class="card_name">Бинокль 1</h4>
+                <p class="card__name_p">
+                  Описание аппарата 1 все его характеристики и свойства
+                </p>
+                <button type="button" class="card__button">Подробнее</button>
+              </div>
+
+              <div class="inner_card">
+                <img src="./img/binoculars.png" alt="Binokle" />
+                <h4 class="card_name">Бинокль 2</h4>
+                <p class="card__name_p">
+                  Описание аппарата 2 все его характеристики и свойства
+                </p>
+                <button type="button" class="card__button">Подробнее</button>
+              </div>
+
+              <div class="inner_card">
+                <img src="./img/binoculars.png" alt="Binokle" />
+                <h4 class="card_name">Бинокль 3</h4>
+                <p class="card__name_p">
+                  Описание аппарата 3 все его характеристики и свойства
+                </p>
+                <button type="button" class="card__button">Подробнее</button>
+              </div>
+
+              <div class="inner_card">
+                <img src="./img/binoculars.png" alt="Binokle" />
+                <h4 class="card_name">Бинокль 4</h4>
+                <p class="card__name_p">
+                  Описание аппарата 4 все его характеристики и свойства
+                </p>
+                <button type="button" class="card__button">Подробнее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main_items_duble">
+            <h4 class="main_items_name">Механика</h4>
+            <div class="main__items">
+              <div class="shop_list">
+                <a href="#!" class="shop_link in-select">Механика</a>
+                <a href="#!" class="shop_link">Механика1</a>
+                <a href="#!" class="shop_link">Механика2</a>
+                <a href="#!" class="shop_link">Механика3</a>
+                <a href="#!" class="shop_link">Механика4</a>
+              </div>
+
+              <div class="main_items_inner">
+                <div class="inner_card">
+                  <img src="/img/Binokle.png" alt="Binokle" />
+                  <h4 class="card_name">Бинокль 1</h4>
+                  <p class="card__name_p">
+                    Описание аппарата 1 все его характеристики и свойства
+                  </p>
+                  <button type="button" class="card__button">Подробнее</button>
+                </div>
+
+                <div class="inner_card">
+                  <img src="/img/Binokle.png" alt="Binokle" />
+                  <h4 class="card_name">Бинокль 2</h4>
+                  <p class="card__name_p">
+                    Описание аппарата 2 все его характеристики и свойства
+                  </p>
+                  <button type="button" class="card__button">Подробнее</button>
+                </div>
+
+                <div class="inner_card">
+                  <img src="/img/Binokle.png" alt="Binokle" />
+                  <h4 class="card_name">Бинокль 3</h4>
+                  <p class="card__name_p">
+                    Описание аппарата 3 все его характеристики и свойства
+                  </p>
+                  <button type="button" class="card__button">Подробнее</button>
+                </div>
+
+                <div class="inner_card">
+                  <img src="/img/Binokle.png" alt="Binokle" />
+                  <h4 class="card_name">Бинокль 4</h4>
+                  <p class="card__name_p">
+                    Описание аппарата 4 все его характеристики и свойства
+                  </p>
+                  <button type="button" class="card__button">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <img src="/img/footer.jpg" alt="footer" />
+    </footer>
+  </body>
+</html>
