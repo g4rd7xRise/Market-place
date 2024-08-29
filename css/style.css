@@ -10,9 +10,13 @@
 
 :root {
   --purple-color: #f21f5b;
-  --blue-color: #1946ba;
+  --blue-color: rgba(25, 70, 186, 0.8);
   --black-color: #222;
   --gray-color: #c4c4c4;
+  --white-gray-color:#f2f2f2;
+  --white-color: #fff;
+  --ccc-color:#ccc;
+  
 
   --o-transition-duration: 0.2s;
 }
@@ -28,39 +32,35 @@ a{
   transition-duration: var(--o-transition-duration);
 }
 
-a:hover {
-  font-weight: 700;
-  font-size: 16px;
-
-}
-
-.container {
-  display: flex; 
+.header-container {
+  display: grid; 
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr;
   justify-content: space-between; 
   align-items: flex-start; 
-  gap: 23px;
-  margin-top: 51px;
+  gap: 24px;
+  margin: 48px 0 0 ;
 }
 
-/* ------------Serch------------- */
+/* ------------Serch------------- OK*/
 
 .inner_serch {
-  background-color: #ffffff; 
-  padding: 34px;
+  overflow-x: hidden;
+  background-color: var(--white-color); 
+  padding: 32px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-  z-index: 100; 
+  max-width: 100%;
   display: flex; 
   align-items: center; 
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .search__bar {
-  display: block;
-  box-sizing: border-box;
-  height: 40px;
+  height: 2.5rem;
   width: 50%;
-  background-color: #f2f2f2;
-  border: 1px solid #ccc; 
+  background-color: var(--white-gray-color);
+  border: 1px solid var(--ccc-color); 
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
@@ -70,9 +70,9 @@ a:hover {
   font-family: Georgia, 'Times New Roman', Times;
   border: none;
   background-color: transparent;
-  margin-left: 34px;
-  margin-right: 34px;
-  padding: 5px; 
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 4px; 
 }
 
 .search__select:focus {
@@ -83,13 +83,11 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f2f2f2;
-  border: none; 
-  color: #3949E7;
+  background-color: var(--white-gray-color);
   height: 2.5em;
   width: 54px;
   cursor: pointer;
-  border: 1px solid #ccc;
+  border: 1px solid var(--ccc-color);
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   
@@ -97,13 +95,13 @@ a:hover {
 
 
 .login__button {
-  min-width: 105px;
-  height: 40px;
+  min-width: 6.75rem;
+  height: 2.5rem;
   font-weight: 700;
-  padding: 5px 10px; 
-  background-color: #ffffff; 
-  color: #1946BA; 
-  border: 1px solid #1946BA ;
+  padding: 8px 10px; 
+  background-color: var(--white-color); 
+  color: var(--blue-color); 
+  border: 1px solid var(--blue-color) ;
   border-radius: 4px; 
   cursor: pointer; 
 }
@@ -111,123 +109,149 @@ a:hover {
 
 
 .search__button:hover {
-  background-color: #ffffff; 
+  background-color: var(--white-color); 
   transition: var(--o-transition-duration);
 }
 
 .login__button:hover {
-  background-color: rgba(25, 70, 186, 0.8);
-  color:#FFF;
+  background-color: var(--blue-color);
+  color:var(--white-color);
   transition: var(--o-transition-duration);
 }
-
-
 /* -----------Menu--------------- */
 
 .header__menu {
-  background-color: white;
-  padding: 20px;
-  max-width: 250px;
-  margin-right: 23px;
-  margin-left: 90px; 
+  background-color: var(--white-color);
+  padding: 1.25rem;
+  min-width: 16.75rem;
+  margin-right: 24px;
+  margin-left: 92px; 
   border-radius: 5px;
-  flex-shrink: 0;
-}
-
-.header__menu_list {
   display: flex;
   flex-direction: column;
 }
 
-.header__menu_name {
-  margin-bottom: 10px;  
-}
 
-.header__menu_list {
-  display: flex; 
-  flex-direction: column;
+
+.header__menu_name {
+  margin-bottom: 12px;  
 }
 
 .header__menu_link, .banner-button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   color: var(--black-color);
-  padding: 10px 0;
-  column-gap: 7px;
-
+  padding: 12px;
+  column-gap: 8px;
+  box-sizing: border-box;
 }
 
 .header__menu_link.is-current::after{
   content: "";
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
   background-color: var(--purple-color);
   border-radius: 50%;
 }
 
+.header__menu_link:hover{
+  color: var(--purple-color);
+  background-color: rgba(0, 0, 0, 0.1); 
+  border-radius: 4px;
+}
+
 .header__menu_icon {
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
-.in-him {
-  margin-left: 3px;
+.in-chemistry {
+  margin-left: 4px;
 
 }
+
+
 
 /* --------------Baners----------- */
 
 .banner-container {
-  display: flex; 
-  /* flex-direction: column;  */
-  flex-wrap: wrap;
-  align-items: start; 
-  width: 1050px;
-  margin: 0 auto;
-  margin-left: 0; 
-  object-fit: cover;
+  display: grid;
+  grid-template-areas: 
+      "banner1 banner1"
+      "banner2 banner3";
+  grid-template-columns: 4fr 4fr;
+  gap: 44px; 
+  margin-right: 92px;
 }
 
-.main-banner {
-  width: 1048px ;
-  min-height: 289;
-  margin-bottom: 31px;
+.banner {
+  display: grid;
+  grid-template-areas: 
+      "image"
+      "content"; 
+  background-color: var(--white-color);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-
-.banner-row{
-  position: relative;
-  width: 502px;
-  height: 291px; 
-  margin-right: 44px;
+.banner:nth-child(1) {
+  grid-area: banner1;
 }
 
-.tree-banner {
-  position: relative;
-    width: 502px;
-    height: 289px; 
+.banner:nth-child(2) {
+  grid-area: banner2;
 }
 
-.banner-buttons {
-  position: absolute;
-  top: 250px;
-  left: 80px;
-  transform: translate(-50%, -50%);
+.banner:nth-child(3) {
+  grid-area: banner3;
+}
+
+.banner__image {
+  grid-area: image; /* Назначаем область для изображения */
+  background-image: url('your-image-url-1.jpg'); /* Замените на URL вашего изображения */
+  background-size: cover; /* Обеспечивает покрытие всего блока изображением */
+  background-position: center; /* Центрирование изображения */
+  height: 292px;
+  
+}
+
+.banner__content {
+  grid-area: content; /* Назначаем область для контента */
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: column; /* Вертикальная компоновка текста */
+  padding: 16px; /* Отступы для контента */
 }
 
-.banner-button {
-  color: white;
-  width: 105px;
-  height: 40px;
-  padding: 10px 20px;
-  border: 1px solid #FFF;
-  border-radius: 4px;
-  cursor: pointer;
+.banner__title {
+  font-size: 20px; /* Размер шрифта заголовка */
+  margin: 0; /* Убираем отступы */
 }
 
+.banner__description {
+  font-size: 14px; /* Размер шрифта описания */
+  margin: 10px 0; /* Отступы сверху и снизу */
+}
 
+.banner__button {
+  padding: 10px 20px; /* Отступы кнопки */
+  background-color: var(--blue-color); /* Цвет фона кнопки */
+  color: var(--white-color);
+  border-radius: 5px; /* Закругление углов кнопки */
+  transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.banner__button:hover {
+  background-color: var(--black-color); 
+}
+
+@media (max-width: 768px) {
+  .banner-container {
+      grid-template-areas: 
+          "banner1" 
+          "banner2" 
+          "banner3"; 
+      grid-template-columns: 1fr; 
+  }
+}
 
 /* ----------------Section1------------------ */
 
