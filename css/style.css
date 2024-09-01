@@ -176,10 +176,10 @@ a{
 
 .banner-container {
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
       "banner1 banner1"
       "banner2 banner3";
-  grid-template-columns: 4fr 4fr;
+  /*grid-template-columns: 4fr 4fr;*/
   gap: 44px; 
   margin-right: 92px;
 }
@@ -201,38 +201,61 @@ a{
   grid-area: banner1;
   background-color: var(--blue-color);
   color: var(--white-color);
+  grid-template-columns: 4fr 4fr;
 }
 
 .banner:nth-child(2) {
   grid-area: banner2;
-  background-color: var(--green-color);
+  background-color: #38C463;
   color: var(--white-color);
+  grid-template-columns: 3fr 1fr;
 }
 
 .banner:nth-child(3) {
   grid-area: banner3;
   background-color: var(--purple-color);
   color: var(--white-color);
+  grid-template-columns: 3fr 1fr;
 }
 
 .banner__content {
   grid-area: content; 
   display: flex;
   flex-direction: column; 
-  justify-content: center; 
+  justify-content: center;
 }
 
 .banner__title {
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 24px;
   margin: 0;
 }
 
 .banner__description {
   font-size: 14px;
   color: var(--gray-color);
-  margin: 10px 0;
+  margin: 32px 0;
 }
+
+
+.banner:nth-child(1) .banner__title {
+  grid-area: banner1;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.banner:nth-child(2) .banner__title {
+  grid-area: banner2;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+
+.banner:nth-child(3) .banner__title {
+  grid-area: banner3;
+  font-size: 32px;
+  font-weight: 700;
+}
+
 
 
 /*/Текст внутри /*/
@@ -240,8 +263,8 @@ a{
 .additional-texts {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Три колонки */
-  gap: 10px; /* Пробел между элементами */
-  margin: 52px 0 24px ;
+  gap: 10px;
+  margin: 24px 0 24px ;
 }
 
 .additional-title {
@@ -290,9 +313,12 @@ a{
   transition: background-color 0.3s;
   color:var(--white-color);
   z-index: 100;
-  font-size: 16px;
+  /*font-size: 16px;*/
   line-height: 1.5;
   display: inline-block;
+  margin: 24px 252px 0 0 ;
+  text-align: center;
+
 }
 
 /* Изменение цвета фона кнопки при наведении */
@@ -330,7 +356,7 @@ a{
 
 }
 
-/* Дополнительные круги для первого баннера */
+/* Дополнительные круги для 1 баннера */
 .banner:nth-child(1) .circle3,
 .banner:nth-child(1) .circle4 {
   content: '';
@@ -362,31 +388,95 @@ a{
 
 
 .banner:nth-child(2)::before {
-  width: 100px;
-  height: 100px;
-  top: 20%;
-  left: 80%;
+  width: 14px;
+  height: 14px;
+  top: 12%;
+  left: 96%;
+  background-color: #f21f5b;
 }
 
 .banner:nth-child(2)::after {
-  width: 90px;
-  height: 90px;
-  top: 70%;
-  left: 40%;
+  width: 30px;
+  height: 30px;
+  top: 25%;
+  left: 85%;
+  background-color: #f21f5b;
+  filter: blur(6px);
+}
+
+/* Дополнительные круги для 2 баннера */
+.banner:nth-child(2) .circle3,
+.banner:nth-child(2) .circle4 {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-color: #f21f5b;
+  backdrop-filter: blur(4px);
+  z-index: 1;
+
+}
+
+.banner:nth-child(2) .circle3 {
+  width: 50px;
+  height: 50px;
+  top: 55%;
+  left: 70%;
+  filter: blur(10px);
+
+}
+
+.banner:nth-child(2) .circle4 {
+  width: 212px;
+  height: 212px;
+  top: 60%;
+  left: 88%;
+  filter: blur(35px);
 }
 
 .banner:nth-child(3)::before {
-  width: 100px;
-  height: 100px;
-  top: 30%;
-  left: 5%;
+  width: 14px;
+  height: 14px;
+  top: 12%;
+  left: 96%;
+  background-color: #FFD22F;
 }
 
 .banner:nth-child(3)::after {
-  width: 80px;
-  height: 80px;
-  top: 50%;
-  left: 50%;
+  width: 30px;
+  height: 30px;
+  top: 25%;
+  left: 85%;
+  background-color: #FFD22F;
+  filter: blur(6px);
+}
+
+/* Дополнительные круги для 3 баннера */
+.banner:nth-child(3) .circle3,
+.banner:nth-child(3) .circle4 {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-color: #FFD22F ;
+  backdrop-filter: blur(4px);
+  z-index: 1;
+
+}
+
+.banner:nth-child(3) .circle3 {
+  width: 50px;
+  height: 50px;
+  top: 55%;
+  left: 70%;
+  filter: blur(10px);
+
+}
+
+.banner:nth-child(3) .circle4 {
+  width: 212px;
+  height: 212px;
+  top: 65%;
+  left: 82%;
+  filter: blur(15px);
 }
 
 @media (max-width: 768px) {
@@ -396,6 +486,17 @@ a{
           "banner2" 
           "banner3"; 
       grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner::before,
+  .banner::after,
+  .banner .circle3,
+  .banner .circle4 {
+    width: 20px;
+    height: 20px;
+    filter: blur(3px); /* Уменьшаем размытие на мобильных устройствах */
   }
 }
 
@@ -567,4 +668,74 @@ a{
 .main_items_name {
   font-size: 24px;
   margin-bottom: 24px;
+}
+
+
+
+
+
+
+.footer__container {
+  display: grid;
+  grid-template-areas:
+    "block1 block2 block3 block4";
+  grid-template-columns: repeat(4, 1fr);
+  gap: 44px;
+  background-color: #232473;
+  padding: 60px;
+}
+
+.container_inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_link {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer_link:hover {
+  color: #ccc;
+}
+
+.footer_title {
+  color: white;
+  margin-bottom: 20px;
+}
+/*Иконки*/
+
+.footer__icons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+
+.footer__icon_name {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-icons, .app_icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer__icon {
+  width: 50px;
+  height: 50px;
+}
+
+.footer_button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: white 1px solid;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 16px;
 }
