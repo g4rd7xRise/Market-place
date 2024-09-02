@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>Главная страница</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="inner_serch">
+            <label for="inner_serch"></label>
+            <input
+              type="search"
+              id="inner_serch"
+              class="search__bar"
+              placeholder="Поиск по сайту"
+            />
+
+            <button type="button" class="search__button">
+            <img src="/icon/search.svg" alt="search" class="search">
+            </button>
+
+            <div class="select-container">
+              <select name="select" class="search__select">
+                <option value="language1" selected>Ru</option>
+                <option value="language1">En</option>
+                <option value="language1">Fr</option>
+                <option value="language1">Gr</option>
+              </select>
+              <div class="select-arrow"></div>
+            </div>
+
+            <div>
+              <button type="button" class="login__button">Войти</button>
+            </div>
+        </div>
+        <div class="header-container">
+          <nav class="header__menu">
+            <h3 class="header__menu_name">Категории:</h3>
+            <ul class="header__menu_list">
+              <li class="header__menu_item">
+                <a href="/" class="header__menu_link is-current">
+                  <img
+                    src="./icon/physics.svg"
+                    alt="Физика"
+                    class="header__menu_icon"
+                  />
+                  Физика
+                </a>
+              </li>
+
+              <li class="header__menu_item">
+                <a href="/" class="header__menu_link">
+                  <img
+                    src="./icon/chemistry.svg"
+                    alt="Химия"
+                    class="header__menu_icon in-chemistry"
+                  />
+                  Химия
+                </a>
+              </li>
+
+              <li class="header__menu_item">
+                <a href="/" class="header__menu_link">
+                  <img
+                    src="./icon/biology.svg"
+                    alt="Биология"
+                    class="header__menu_icon"
+                  />
+                  Биология
+                </a>
+              </li>
+
+              <li class="header__menu_item">
+                <a href="/" class="header__menu_link">
+                  <img
+                    src="./icon/economy.svg"
+                    alt="Экономика"
+                    class="header__menu_icon"
+                  />
+                  Экономика
+                </a>
+              </li>
+
+              <li class="header__menu_item">
+                <a href="/" class="header__menu_link">
+                  <img
+                    src="./icon/mathematics.svg"
+                    alt="Механика"
+                    class="header__menu_icon"
+                  />
+                  Механика
+                </a>
+              </li>
+
+              <li class="header__menu_item">
+                <a href="/" class="header__menu_link">
+                  <img
+                    src="./icon/engineering.svg"
+                    alt="Инженерия"
+                    class="header__menu_icon"
+                  />
+                  Инженерия
+                </a>
+              </li>
+
+              <li class="header__menu_item">
+                <a href="/" class="header__menu_link">
+                  <img
+                    src="./icon/scientific-catalog-equipment.svg"
+                    alt="Каталог научного оборудования"
+                    class="header__menu_icon"
+                  />
+                  Каталог научного оборудования
+                </a>
+              </li>
+
+              <li class="header__menu_item">
+                <a href="/" class="header__menu_link">
+                  <img
+                    src="./icon/equipment.svg"
+                    alt="Оборудование с УД"
+                    class="header__menu_icon"
+                  />
+                  Оборудование с УД
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="banner-container">
+            <div class="banner">
+              <div class="circle3"></div>
+              <div class="circle4"></div>
+                <div class="banner__image"></div>
+                <div class="banner__content">
+                    <h1 class="banner__title">Добро пожаловать в навигатор по научному оборудованию.</h1>
+                    <p class="banner__description">Центры коллективного пользования научным оборудованием и уникальные научные установки</p>
+                  <div class="additional-texts">
+                   <div class="additional-title">614</div>
+                   <div class="additional-title">362</div>
+                   <div class="additional-title">7</div>
+                   <div class="additional-item">Зарегистрировано центров коллективного пользования</div>
+                   <div class="additional-item">Зарегистрировано уникальных научных установок</div>
+                   <div class="additional-item">Создается в России установок класса "Megascience"</div>
+                </div>
+                </div>
+            </div>
+            <div class="banner">
+              <div class="circle3"></div>
+              <div class="circle4"></div>
+                <div class="banner__image"></div>
+                <div class="banner__content">
+                    <h1 class="banner__title">Каталог оборудования с коллективным доступом.</h1>
+                    <p class="banner__description">Добро пожаловать в наш каталог, в котором вы сможете ознакомитьсясо всеми нашими товарами.</p>
+                    <a href="#" class="banner__button">Подробнее</a>
+                </div>
+            </div>
+            <div class="banner">
+              <div class="circle3"></div>
+              <div class="circle4"></div>
+                <div class="banner__image"></div>
+                <div class="banner__content">
+                    <h1 class="banner__title">Каталог оборудования с удаленным доступом.</h1>
+                    <p class="banner__description">Добро пожаловать в наш каталог, в котором вы сможете ознакомитьсясо всеми нашими товарами.</p>
+                    <a href="#" class="banner__button">Подробнее</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__shop">
+        <div class="main__shop_cards">
+          <div class="shop__card">
+            <a href="#!" class="shop__card-link">
+              <img src="./icon/shop.svg" alt="Shop" class="shop__card_ico" />
+
+              <div class="shop__card_title">
+                <h2 class="card__title_name">Пример1</h2>
+                <p class="card__title_parag">Пример1</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="shop__card">
+            <a href="#!" class="shop__card-link">
+              <img src="./icon/shop.svg" alt="Shop" class="shop__card_ico" />
+
+              <div class="shop__card_title">
+                <h2 class="card__title_name">Пример2</h2>
+                <p class="card__title_parag">Пример2</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="shop__card">
+            <a href="#!" class="shop__card-link">
+              <img src="./icon/shop.svg" alt="Shop" class="shop__card_ico" />
+
+              <div class="shop__card_title">
+                <h2 class="card__title_name">Пример3</h2>
+                <p class="card__title_parag">Пример3</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="shop__card">
+            <a href="#!" class="shop__card-link">
+              <img src="./icon/shop.svg" alt="Shop" class="shop__card_ico" />
+
+              <div class="shop__card_title">
+                <h2 class="card__title_name">Пример4</h2>
+                <p class="card__title_parag">Пример4</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="main_items_case">
+          <h4 class="main_items_name">Физика</h4>
+          <div class="main__items">
+            <div class="shop_list">
+              <a href="#!" class="shop_link in-select">Оптика</a>
+              <a href="#!" class="shop_link">Оптика1</a>
+              <a href="#!" class="shop_link">Оптика2</a>
+              <a href="#!" class="shop_link">Оптика3</a>
+              <a href="#!" class="shop_link">Оптика4</a>
+            </div>
+
+            <div class="main_items_inner">
+              <div class="inner_card">
+                <img src="./img/binoculars.png" alt="Binokle" />
+                <h4 class="card_name">Бинокль 1</h4>
+                <p class="card__name_p">
+                  Описание аппарата 1 все его характеристики и свойства
+                </p>
+                <button type="button" class="card__button">Подробнее</button>
+              </div>
+
+              <div class="inner_card">
+                <img src="./img/binoculars.png" alt="Binokle" />
+                <h4 class="card_name">Бинокль 2</h4>
+                <p class="card__name_p">
+                  Описание аппарата 2 все его характеристики и свойства
+                </p>
+                <button type="button" class="card__button">Подробнее</button>
+              </div>
+
+              <div class="inner_card">
+                <img src="./img/binoculars.png" alt="Binokle" />
+                <h4 class="card_name">Бинокль 3</h4>
+                <p class="card__name_p">
+                  Описание аппарата 3 все его характеристики и свойства
+                </p>
+                <button type="button" class="card__button">Подробнее</button>
+              </div>
+
+              <div class="inner_card">
+                <img src="./img/binoculars.png" alt="Binokle" />
+                <h4 class="card_name">Бинокль 4</h4>
+                <p class="card__name_p">
+                  Описание аппарата 4 все его характеристики и свойства
+                </p>
+                <button type="button" class="card__button">Подробнее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main_items_duble">
+            <h4 class="main_items_name">Механика</h4>
+            <div class="main__items">
+              <div class="shop_list">
+                <a href="#!" class="shop_link in-select">Механика</a>
+                <a href="#!" class="shop_link">Механика1</a>
+                <a href="#!" class="shop_link">Механика2</a>
+                <a href="#!" class="shop_link">Механика3</a>
+                <a href="#!" class="shop_link">Механика4</a>
+              </div>
+
+              <div class="main_items_inner">
+                <div class="inner_card">
+                  <img src="./img/binoculars.png" alt="Binokle" />
+                  <h4 class="card_name">Бинокль 1</h4>
+                  <p class="card__name_p">
+                    Описание аппарата 1 все его характеристики и свойства
+                  </p>
+                  <button type="button" class="card__button">Подробнее</button>
+                </div>
+
+                <div class="inner_card">
+                  <img src="./img/binoculars.png" alt="Binokle" />
+                  <h4 class="card_name">Бинокль 2</h4>
+                  <p class="card__name_p">
+                    Описание аппарата 2 все его характеристики и свойства
+                  </p>
+                  <button type="button" class="card__button">Подробнее</button>
+                </div>
+
+                <div class="inner_card">
+                  <img src="./img/binoculars.png" alt="Binokle" />
+                  <h4 class="card_name">Бинокль 3</h4>
+                  <p class="card__name_p">
+                    Описание аппарата 3 все его характеристики и свойства
+                  </p>
+                  <button type="button" class="card__button">Подробнее</button>
+                </div>
+
+                <div class="inner_card">
+                  <img src="./img/binoculars.png" alt="Binokle" />
+                  <h4 class="card_name">Бинокль 4</h4>
+                  <p class="card__name_p">
+                    Описание аппарата 4 все его характеристики и свойства
+                  </p>
+                  <button type="button" class="card__button">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="container_inner">
+          <h1 class="footer_title">ITMO.STUDENTS</h1>
+          <a href="#" class="footer_link">Студенческий офис</a>
+          <a href="#" class="footer_link">Обучение</a>
+          <a href="#" class="footer_link">Студенческая жизнь</a>
+          <a href="#" class="footer_link">Возможности</a>
+          <a href="#" class="footer_link">Мероприятия</a>
+          <a href="#" class="footer_link">Кампус</a>
+          <a href="#" class="footer_link">Сервисы</a>
+        </div>
+
+        <div class="container_inner">
+          <h1 class="footer_title">СЕРВИСЫ</h1>
+          <a href="#" class="footer_link">Расписание и сессия</a>
+          <a href="#" class="footer_link">Запись в студенческий офис</a>
+          <a href="#" class="footer_link">Заказать документы</a>
+          <a href="#" class="footer_link">Корпоративные сервисы</a>
+        </div>
+
+        <div class="container_inner">
+          <h1 class="footer_title">КОРПОРАТИВНЫЕ СЕРВИСЫ</h1>
+          <a href="#" class="footer_link">Корпоративные сервисы</a>
+          <a href="#" class="footer_link">Переводы и вотоновления</a>
+          <a href="#" class="footer_link">Общежития</a>
+          <a href="#" class="footer_link">Стипендии</a>
+          <a href="#" class="footer_link">БСК и транспорт</a>
+        </div>
+
+        <div class="container_inner">
+          <h1 class="footer_title">КОНТАКТЫ</h1>
+          <a href="#" class="footer_link">г. Санкт-Петербург, ул.Ломаносова, д.9, оф. 1400</a>
+          <a href="tel:+78126070474" class="footer_link" itemprop="telephone">+7 (812) 607-04-74</a>
+          <a href="mailto:so@itmo.ru" class="footer_link" itemprop="email">so@itmo.ru</a>
+          <a href="#" class="footer_link">Время работы: пн-пт с 9:00 до 19:00</a>
+          <a href="#" class="footer_button" type="button">Напишите нам</a>
+
+          <div class="footer__icons">
+            <p class="footer__icon_name">Мы в соцсетях:</p>
+            <div class="social-icons">
+              <a href="#" class="footer_link">
+                <img class="footer__icon" src="./icon/vk.svg" alt="Vk">
+              </a>
+              <a href="#" class="footer_link">
+                <img class="footer__icon" src="./icon/instagram.svg" alt="Instagram">
+              </a>
+              <a href="#" class="footer_link">
+                <img class="footer__icon" src="./icon/telegram.svg" alt="Telegram">
+              </a>
+            </div>
+
+            <p class="footer__icon_name">Наши приложения</p>
+            <div class="app_icons">
+              <a href="#" class="footer_link"><img class="footer__icon" src="./icon/appstore.svg" alt="App Store" width="50px" height="50px"></a>
+              <a href="#" class="footer_link"><img class="footer__icon" src="./icon/googleplay.svg" alt="Google Play" width="50px" height="50px"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Новая строка с текстом и иконкой -->
+      <div class="footer__bottom">
+        <div class="footer__bottom_content">
+          <div class="contemt_bottom">
+            <a href="#" class="bottom_content" >Информация  1993-2024 Университет ИТМО</a>
+            <a href="#" class="bottom_content">Разработка  2020 Департамент информационных технологий</a>
+          </div>
+          <img src="./icon/logo.svg" alt="Иконка" class="footer__bottom_logo">
+          <div class="contemt_bottom">
+            <a href="#" class="bottom_content">Правила использования информации в доменной зоне itmo.ru</a>
+            <a href="#" class="bottom_content">Политика по обработке Персональных данных</a>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+  </body>
+</html>
